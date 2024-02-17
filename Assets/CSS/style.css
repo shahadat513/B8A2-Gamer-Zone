@@ -196,27 +196,54 @@ nav ul li a {
     justify-content: space-around;
     margin-top: 120px;
 }
-.play-instantly-content{
+
+.play-instantly-content {
     margin-right: 200px;
 }
-.play-instantly-title{
+
+.play-instantly-title {
     font-size: 3rem;
     font-weight: 700;
     text-align: right;
 }
+
 .play-instantly-description {
     color: rgb(83, 76, 100);
     font-size: 1.12rem;
     font-weight: 400;
     text-align: right;
 }
-.play-instantly-img img{
+
+.play-instantly-img img {
     margin-left: 160px;
 }
-.popup img{
+
+.popup img {
     position: relative;
     bottom: 300px;
     margin: 0;
+}
+
+/* Action Section */
+.action{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+    padding: 110px;
+}
+.single-action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.action-title {
+    color: rgb(11, 2, 35);
+    font-size: 20px;
+    font-weight: 600;
+}
+.single-action:hover{
+    border: 2px solid #ff42a5;
+    border-radius: 50px;
 }
 /* Responsive Area */
 /* Mobile Version */
@@ -225,8 +252,7 @@ nav ul li a {
     nav,
     nav>ul,
     .banner,
-    .play-instantly
-    {
+    .play-instantly {
         flex-direction: column;
         column-gap: 10px;
     }
@@ -251,21 +277,28 @@ nav ul li a {
     .box-content p {
         font-size: .8rem;
     }
+
     .play-instantly-title,
-    .play-instantly-description
-    {
+    .play-instantly-description {
         text-align: center;
     }
-    .play-instantly-content
-    {
+
+    .play-instantly-content {
         margin: 0;
     }
-    .play-instantly-img img{
+
+    .play-instantly-img img {
         margin: 0;
         width: 90%;
     }
-    .popup img{
+
+    .popup img {
         position: static;
+    }
+    .action{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        padding:5px;
     }
 }
 
@@ -275,8 +308,7 @@ nav ul li a {
     nav,
     nav>ul,
     .banner,
-    .play-instantly
-     {
+    .play-instantly {
         flex-direction: column;
     }
 
@@ -289,16 +321,21 @@ nav ul li a {
         align-items: center;
         margin-left: 60px;
     }
+
     .play-instantly-title,
-    .play-instantly-description
-    {
+    .play-instantly-description {
         text-align: center;
     }
-    .play-instantly-img img{
+
+    .play-instantly-img img {
         margin: 0;
         width: 90%;
     }
-    .popup img{
+
+    .popup img {
         position: static;
+    }
+    .action{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
