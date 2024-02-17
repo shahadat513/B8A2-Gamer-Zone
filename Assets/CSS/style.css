@@ -17,7 +17,9 @@ body {
     color: #fff;
     padding: 20px 40px;
 }
-
+.btn-main:hover{
+    background: teal;
+}
 .btn-temp {
     border-radius: 48px;
     background: rgb(78, 197, 247);
@@ -25,7 +27,9 @@ body {
     border: 0;
     padding: 20px 40px;
 }
-
+.btn-temp:hover{
+    background: green;
+}
 .banner-img img {
     width: 100%;
 }
@@ -69,7 +73,9 @@ nav ul li a {
     text-align: center;
     padding: 30px;
 }
-
+nav ul li a:hover{
+    color: #ff42a5;
+}
 .nav-box {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.1);
@@ -178,7 +184,10 @@ nav ul li a {
     grid-template-columns: repeat(4, 1fr);
     padding: 15px;
 }
-
+.box-content img:hover{
+    border: 2px solid #ff42a5;
+    border-radius: 20px;
+}
 .box-content img {
     width: 320px;
 }
@@ -225,26 +234,90 @@ nav ul li a {
 }
 
 /* Action Section */
-.action{
+.action {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+    background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%, rgba(255, 66, 165, 0.03) 87.942%);
     padding: 110px;
 }
-.single-action{
+
+.single-action {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .action-title {
     color: rgb(11, 2, 35);
     font-size: 20px;
     font-weight: 600;
 }
-.single-action:hover{
+
+.single-action:hover {
     border: 2px solid #ff42a5;
     border-radius: 50px;
 }
+
+/* Footer Section */
+.footer {
+    background: rgb(11, 2, 35);
+    padding: 100px;
+}
+
+.logo-footer {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    padding: 30px;
+}
+.footer-menu ul li a:hover{
+    color: #ff42a5;
+}
+.footer-icon ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.footer-icon ul li a {
+    text-align: center;
+}
+
+.footer-terms ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.footer-terms ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-terms ul li a:hover{
+    color: #ff42a5;
+}
+.footer-copywrit {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* Responsive Area */
 /* Mobile Version */
 @media screen and (max-width:576px) {
@@ -295,10 +368,11 @@ nav ul li a {
     .popup img {
         position: static;
     }
-    .action{
+
+    .action {
         grid-template-columns: repeat(2, 1fr);
         margin: 20px;
-        padding:5px;
+        padding: 5px;
     }
 }
 
@@ -335,7 +409,8 @@ nav ul li a {
     .popup img {
         position: static;
     }
-    .action{
+
+    .action {
         grid-template-columns: repeat(3, 1fr);
     }
 }
