@@ -10,6 +10,26 @@ body {
     margin: 0;
 }
 
+.btn-main {
+    border-radius: 48px;
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%, rgb(255, 66, 165) 87.942%);
+    border: 0;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.btn-temp {
+    border-radius: 48px;
+    background: rgb(78, 197, 247);
+    color: #fff;
+    border: 0;
+    padding: 20px 40px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
 /* Navbar Style */
 .logo {
     color: rgb(11, 2, 35);
@@ -30,6 +50,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
 }
 
 nav>ul {
@@ -59,13 +81,90 @@ nav ul li a {
 
 }
 
+/* Banner Style */
+.banner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-content {
+    padding-top: 140px;
+    padding-right: auto;
+}
+
+.banner-title {
+    color: rgb(11, 2, 35);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-main {
+    background: linear-gradient(180.00deg, rgb(249, 72, 178), rgb(135, 88, 241));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip:
+        text;
+    text-fill-color:
+        transparent;
+    font-family: Work Sans;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 111px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-content>ul {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.banner-content>ul li {
+    color: rgb(83, 76, 100);
+    font-size: 20px;
+    font-weight: 500;
+    align-items: left;
+    text-transform: lowercase;
+    margin-top: 5px;
+}
+
 /* Responsive Area */
 /* Mobile Version */
 @media screen and (max-width:576px) {
 
     nav,
-    nav>ul {
+    nav>ul,
+    .banner
+    {
         flex-direction: column;
         column-gap: 10px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner-content{
+        text-align: center;
+    }
+}
+
+/* Tablet Version */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    nav,
+    nav>ul,
+    .banner
+    {
+        flex-direction: column;
+    }
+    .banner-content{
+        text-align: center;
     }
 }
